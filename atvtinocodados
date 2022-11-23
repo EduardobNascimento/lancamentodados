@@ -1,0 +1,15 @@
+Faça um programa que simule um lançamento de dados. Lance o dado 100 vezes e armazene os resultados em um vetor. Depois, mostre quantas vezes cada valor foi conseguido. 
+
+import random
+
+def lancar_dado():
+    return random.randint(1,6)
+lancar_dado()
+
+resultados = []
+for i in range(0,100):
+    resultados.append(lancar_dado())
+print(resultados)
+
+for i in range(1,7):
+    print("O número ", i, "apareceu ", resultados.count(i), "vezes nos resultados")
